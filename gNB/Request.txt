@@ -1,0 +1,7 @@
+For UL synchronization UE sends:
+
+"Random Access Preamble Transmission (Msg1)"
+
+UE sends:
+
+"UE Identification Message (MSG3) Report"

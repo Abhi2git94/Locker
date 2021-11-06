@@ -1,0 +1,12 @@
+gNB replies:
+
+"Random Access Response (MSG2) Report"
+
+Assign     TEMP_C_RNTI
+
+UL grant for L2/L3 message
+
+
+Network replies: 
+
+"Contention Resolution Message (MSG4) Report"

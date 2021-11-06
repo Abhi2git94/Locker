@@ -1,0 +1,68 @@
+{
+  message c1: dlInformationTransfer: {
+    rrc-TransactionIdentifier 0,
+    criticalExtensions dlInformationTransfer: {
+      dedicatedNAS-Message '7E0206FC019B027E0054431081C176589E9EBFCD7490B34CBFBFE56
+                            B450981C176589E9EBFCD7446404791118261539040490100'H
+    }
+  }
+}
+
+ 
+
+    Protocol discriminator = 0x7e (5GS Mobility Management)
+    Security header = 0x2 (Integrity protected and ciphered)
+    Auth code = 0x66f143b0
+    Sequence number = 0x03
+    Protocol discriminator = 0x7e (5GS Mobility Management)
+    Security header = 0x0 (Plain 5GS NAS message, not security protected)
+    Message type = 0x68 (DL NAS transport)
+    Payload container type = 1 (N1 SM information)
+    Payload container:
+      Protocol discriminator = 0x2e (5GS Session Management)
+      PDU session identity = 5
+      Procedure transaction identity = 9
+      Message type = 0xc2 (PDU session establishment accept)
+      Selected PDU session type = 0x3 (IPv4v6)
+      Selected SSC mode = 0x1 (1)
+      Authorized QoS rules:
+        QoS rule 1:
+          QoS rule identifier = 1
+          Rule operation code = 1 (create new QoS rule)
+          DQR = 1 (the QoS rule is the default QoS rule)
+          Number of packet filters = 1
+          Packet filter identifier = 15
+            Packet filter direction = 3 (bidirectional)
+            Match-all
+          QoS rule precedence = 255
+          QFI = 1
+      Session AMBR:
+        Session-AMBR for downlink = 3000000 kbps
+        Session-AMBR for uplink = 1000000 kbps
+      PDU address:
+        PDU session type = 3 (IPv4v6)
+        IPv6 = ::2001:468:3000:1
+        IPv4 = 192.168.4.2
+      Authorized QoS flow descriptions:
+        QoS flow description 1:
+          QFI = 1
+          Operation code = 1 (create new QoS flow description)
+          E = 1 (parameters list is included)
+          Number of parameters = 1
+          5QI = 5
+      Extended protocol configuration options:
+        Ext = 1
+        Configuration protocol = 0
+        Protocol ID = 0x000d (DNS Server IPv4 Address)
+        Data = 8.8.8.8
+        Protocol ID = 0x0003 (DNS Server IPv6 Address)
+        Data = 2001:4860:4860:0:0:0:0:8888
+        Protocol ID = 0x000c (P-CSCF IPv4 Address)
+        Data = 192.168.4.1
+        Protocol ID = 0x0001 (P-CSCF IPv6 Address)
+        Data = 2001:468:3000:1:0:0:0:0
+        Protocol ID = 0x0002 (IM CN Subsystem Signaling Flag)
+        Data =
+      DNN = "ims.mnc001.mcc001.gprs"
+      PDU session ID = 5
+

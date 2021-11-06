@@ -1,0 +1,1 @@
+6 --"Namf_Communication_N1N2MessageTransfer(SMS body)"

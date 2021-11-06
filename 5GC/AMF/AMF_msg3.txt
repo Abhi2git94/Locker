@@ -1,0 +1,1 @@
+9 --"Nsmsf_SMService_UplinkSMS (CP ack)"

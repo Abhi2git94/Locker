@@ -1,0 +1,1 @@
+13 --"Namf_Communication_N1N2MessageTransfer (CP ack)"

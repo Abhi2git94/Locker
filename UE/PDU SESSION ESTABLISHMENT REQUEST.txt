@@ -1,0 +1,55 @@
+{
+  message c1: ulInformationTransfer: {
+    criticalExtensions ulInformationTransfer: {
+      dedicatedNAS-Message '7E02FF096300027E006701001E2E0509C1FFFF93A17B001380000A00000
+                                      200000100000C00000300000D00120581250403696D73'H
+    }
+  }
+}
+
+ 
+
+
+    Message: UL NAS transport
+
+    Data:
+
+    Protocol discriminator = 0x7e (5GS Mobility Management)
+    Security header = 0x2 (Integrity protected and ciphered)
+    Auth code = 0xff096300
+    Sequence number = 0x02
+    Protocol discriminator = 0x7e (5GS Mobility Management)
+    Security header = 0x0 (Plain 5GS NAS message, not security protected)
+    Message type = 0x67 (UL NAS transport)
+    Payload container type = 1 (N1 SM information)
+    Payload container:
+      Protocol discriminator = 0x2e (5GS Session Management)
+      PDU session identity = 5
+      Procedure transaction identity = 9
+      Message type = 0xc1 (PDU session establishment request)
+      Integrity protection maximum data data:
+        Maximum data rate per UE for user-plane integrity protection 
+                                         for uplink = 0xff (Full data rate)
+        Maximum data rate per UE for user-plane integrity protection 
+                                         for downlink = 0xff (Full data rate)
+      PDU session type = 0x3 (IPv4v6)
+      SSC mode = 0x1 (1)
+      Extended protocol configuration options:
+        Ext = 1
+        Configuration protocol = 0
+        Protocol ID = 0x000a (IP address allocation via NAS signalling)
+        Data =
+        Protocol ID = 0x0002 (IM CN Subsystem Signaling Flag)
+        Data =
+        Protocol ID = 0x0001 (P-CSCF IPv6 Address Request)
+        Data =
+        Protocol ID = 0x000c (P-CSCF IPv4 Address Request)
+        Data =
+        Protocol ID = 0x0003 (DNS Server IPv6 Address Request)
+        Data =
+        Protocol ID = 0x000d (DNS Server IPv4 Address Request)
+        Data =
+    PDU session ID = 5
+    Request type = 0x1 (initial request)
+    DNN = "ims"
+
